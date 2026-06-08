@@ -5,10 +5,9 @@ const path = require("path");
 const os = require("os");
 const app = express();
 
-require("dotenv").config();
 
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN,
+  origin: "http://localhost:35179",
   credentials: true,
 }));
 
@@ -163,7 +162,7 @@ app.post("/download", (req, res) => {
     "Cache-Control": "no-cache, no-transform",
     "Connection": "keep-alive",
     "X-Accel-Buffering": "no",
-    "Access-Control-Allow-Origin": process.env.CLIENT_ORIGIN,
+    "Access-Control-Allow-Origin": "http://localhost:35179",
     "Access-Control-Allow-Credentials": "true",
   });
 
@@ -262,8 +261,7 @@ app.post("/download", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT;
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(39101, "0.0.0.0", () => {
   console.log(`Server running ...`);
 });

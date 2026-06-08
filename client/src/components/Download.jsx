@@ -3,8 +3,7 @@ import UrlInput from "./layouts/UrlInput";
 import VideoCard from "./utils/VideoCard";
 import ProgressBar from "./utils/ProgressBar";
 
-const API = import.meta.env.VITE_API_URL;
-fetch(`${API}/formats`)
+const API = "http://localhost:39101";
 
 const Download = () => {
   const [info, setInfo] = useState(null);
