@@ -1,6 +1,6 @@
 # VIDOE
 
-**Multi-source video extraction protocol — free, open source, containerized, no ads.**
+**Multi-source Video Extractionz System — free, open source, containerized, no ads.**
 
 VIDOE is a self-hosted video downloader built on [yt-dlp](https://github.com/yt-dlp/yt-dlp), wrapped in a clean terminal-aesthetic UI. Paste a link, pick a format, download. No accounts, no tracking, no ads, no limits.
 
